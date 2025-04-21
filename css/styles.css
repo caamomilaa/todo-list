@@ -19,8 +19,74 @@ nav ul {
   margin-bottom: 0;
 }
 body {
+  padding: 16px;
   margin: 0;
   font-family: sans-serif;
   background-color: grey;
   color: white;
+
+}
+
+.todo-header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.todo-item{
+  display: flex;
+  gap: 16px;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.circle{
+  width:20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: transparent;
+  border: 1px solid grey;
+}
+.todo-input{
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+
+.task-default{
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  align-items: center;
+}
+.task-name{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.text-bold{
+  color: grey;
+  font-weight: 700;
+  margin: 0;
+}
+.checkbox{
+  appearance: none;
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 1px solid grey;
+  background-color: none;
+}
+.cross-button{
+  background-color: transparent;
+  border: none;
+}
+
+.crossed{
+  text-decoration: line-through;
 }

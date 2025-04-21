@@ -19,7 +19,7 @@
 			</a>
 		</header>
 		<main>
-			<div class="todo-input">
+			<div class="todo-item">
 				<div class="circle"></div>
 				<input
 					class="todo-input"
@@ -29,9 +29,11 @@
 				/>
 			</div>
 			<div class="list-container">
-				<div class="task">
-					<input type="checkbox" />
-					<p class="text-bold">Make a todo app</p>
+				<div class="task-default">
+					<div class="task-name">
+						<input class="checkbox" id="checkbox" type="checkbox" />
+						<p class="text-bold">Make a todo app</p>
+					</div>
 					<button class="cross-button" id="cross-button">
 						<img src="./assets/images/icon-cross.svg" alt="" />
 					</button>
@@ -42,8 +44,7 @@
 						<p class="text">items left</p>
 					</div>
 					<div class="list-filters">
-						<span class="text" id="clear">Clear</span>
-						<span class="text" id="completed">Completed</span>
+						<span class="text" id="remove-completed">Remove Completed</span>
 					</div>
 				</section>
 			</div>
